@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    container_name: adonisjs-server_app
+    container_name: lunafreya-server_app
     image: apquinit/adonisjs:latest
     ports:
       - '3333:3333'
@@ -14,16 +14,16 @@ services:
       - network
 
   database:
-    container_name: adonisjs-server_database
+    container_name: lunafreya-server_database
     image: postgres:12.0
     ports:
       - '5432:5432'
     volumes:
       - $PWD/database/pg:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: adonisjs
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: adonisjs
+      POSTGRES_DB: lunafreya
     networks:
       - network
 
