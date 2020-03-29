@@ -18,3 +18,16 @@ const Route = use('Route')
 
 /** Home */
 Route.get('/', 'HomeController.index').middleware('guest')
+
+
+/** Routes */
+//Register User
+Route.post('/users', 'UserController.registerUser')
+//Display All Users
+Route.get('/users', 'UserController.getUsers')
+//Display Specific User
+Route.get('/users/:user', 'UserController.getSpecificUser')
+//Edit User Details
+Route.put('/users/:user', 'UserController.editUser')
+//Delete User Details
+Route.delete('/users/:user', 'UserController.deleteUser')
