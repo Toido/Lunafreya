@@ -2,7 +2,7 @@
   "name": "lunafreya",
   "version": "0.0.1",
   "adonis-version": "4.1.0",
-  "description": "AdonisJs template for twala projects.",
+  "description": "AdonisJs template for Lunafreya.",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint . --ext .js",
